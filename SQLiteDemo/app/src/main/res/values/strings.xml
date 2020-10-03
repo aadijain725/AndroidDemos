@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="et_value">Customer Name</string>
+    <string name="customer_age">Age</string>
+    <string name="active_customer">Active Customer</string>
+    <string name="btn_viewAll">View All</string>
+    <string name="btn_add">Add</string>
+</resources>

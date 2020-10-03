@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    tools:context=".FirstFragment">
+
+    <TextView
+        android:id="@+id/tvF1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_centerInParent="true"
+        android:text="@string/hello_first_fragment" />
+    <EditText
+        android:id="@+id/etF1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvF1"
+        android:textSize="30sp"
+        android:background="@android:color/background_light"
+        />
+    <Button
+        android:id="@+id/buttonFromFrag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Click to send to SecondFragment"
+        android:textSize="25sp"
+        />
+
+</RelativeLayout>

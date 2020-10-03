@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:layout_above="@id/button_id"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        >-->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_id"
+        android:gravity="center"
+        android:text="Type here: "
+        android:textSize="40sp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/EditText"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_id"
+        android:layout_alignRight="@id/submitted_text"
+        android:layout_toRightOf="@id/title"
+        android:gravity="center"
+        android:inputType="text"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:background="@drawable/gradient_color_2"
+        />
+<!--    </LinearLayout>-->
+    <Button
+        android:id="@+id/button_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/submit"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/submitted_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/button_id"
+        android:layout_marginVertical="20dp"
+        android:text="You said:"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:background="@drawable/gradient_color_3"
+        />
+
+</RelativeLayout>

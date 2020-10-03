@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Fragment_demo</string>
+    <string name="hello_first_fragment">Hello from first fragment</string>
+    <string name="hello_second_fragment">Hello from second fragment</string>
+    <string name="fragment_1">Fragment 1</string>
+    <string name="fragment_2">Send data from Fragment 1 to 2</string>
+</resources>

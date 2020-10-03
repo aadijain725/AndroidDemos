@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Demo</string>
+    <string name="clickme">Click for Relative Layout screen</string>
+    <string name="vertTextView">Hello, I am a Vertical textView </string>
+    <string name="icon">icon</string>
+    <string name="horzTextView">This is Horizontal Text View</string>
+    <string name="clickme2">Click to send message to Home Screen</string>
+    <string name="submit">Submit</string>
+</resources>

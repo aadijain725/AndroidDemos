@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">InformationForm</string>
+    <string-array name="grade_array">
+        <item> 1st Grade </item>
+        <item> 2nd Grade </item>
+        <item> 3rd Grade </item>
+        <item> 4th Grade </item>
+        <item> 5th Grade </item>
+        <item> 6th Grade </item>
+        <item> 7th Grade </item>
+        <item> 8th Grade </item>
+        <item> 9th Grade </item>
+    </string-array>
+    <string-array name="section_array">
+        <item> A </item>
+        <item> B </item>
+        <item> C </item>
+    </string-array>
+</resources>
