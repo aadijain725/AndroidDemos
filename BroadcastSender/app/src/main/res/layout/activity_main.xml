@@ -13,11 +13,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
      />
+
     <Button
-        android:id="@+id/btn_brs_send"
+        android:id="@+id/btn_brs_send_to_BRD1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Send"
-    />
+        android:text="Send to BRD Original"/>
+    <Button
+        android:id="@+id/btn_brs_send_to_BRD2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send to BRD2!"/>
+<!--    <Button-->
+<!--        android:id="@+id/btn_brs_send_customAction"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Send"-->
+<!--    />-->
+
 
 </LinearLayout>

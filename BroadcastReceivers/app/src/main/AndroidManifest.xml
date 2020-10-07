@@ -17,7 +17,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<!--        <receiver android:name=".BroadCastReceiverDemo"> FOR STATIC RECEIVERS - BAD-->
+        <receiver android:name=".BroadCastReceiverDemo"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.broadcastsender.EXAMPLE_ACTION"/>
+            </intent-filter>
+        </receiver>
+        <!-- Allows to be triggered by other apps-->
+
+<!--            FOR STATIC RECEIVERS - BAD-->
 <!--            <intent-filter>-->
 <!--                <action android:name="android.intent.action.BOOT_COMPLETED"/>-->
 <!--                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>-->

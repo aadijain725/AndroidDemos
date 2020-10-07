@@ -11,7 +11,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val filter = IntentFilter("com.example.CUSTOM_BR_ACTION")
+    }
+
+    /*For implicit broadcasts --
+        val filter = IntentFilter("com.example.CUSTOM_BR_ACTION") -- dont want this as our main br...
         //filter.addAction(android.action.BUG_REPORT)
         // to add more than 1 action filter.addAction()
         registerReceiver(br, filter)
@@ -36,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         super.onDestroy()
         unregisterReceiver(br)
     }
-
+*/
     companion object {
         private val br = BroadCastReceiverDemo()
     }

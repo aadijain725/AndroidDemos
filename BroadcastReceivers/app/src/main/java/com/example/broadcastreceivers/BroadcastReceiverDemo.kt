@@ -9,6 +9,9 @@ import android.widget.Toast
 class BroadCastReceiverDemo : BroadcastReceiver()  {
 
     override fun onReceive(context: Context?, intent: Intent?) {
+
+        Toast.makeText(context, "BRD original triggered", Toast.LENGTH_SHORT).show()
+
         // Intent contains action that was triggered
         // This ordering is important as intent may be null leading to app crash
         if (Intent.ACTION_BOOT_COMPLETED.equals(intent?.action)) {
@@ -18,8 +21,8 @@ class BroadCastReceiverDemo : BroadcastReceiver()  {
 
         // better to use package name as custom action name
         if ("com.example.CUSTOM_BR_ACTION".equals(intent?.action)) {
-            val recievedText = intent?.getStringExtra("com.example.EXTRA_TEXT")
-            Toast.makeText(context, recievedText, Toast.LENGTH_SHORT).show()
+            val receivedText = intent?.getStringExtra("com.example.EXTRA_TEXT")
+            Toast.makeText(context, receivedText, Toast.LENGTH_SHORT).show()
         }
 
         // Depricated for API >= 24 cant listen for this broadcast as IMPLICIT but can use Dynamic
